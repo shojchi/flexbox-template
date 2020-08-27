@@ -1,0 +1,16 @@
+{
+  "name": "flexbox-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alecto/flexbox-template",
+  "author": "Alecto <fomenkoandrey@inbox.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "normalize-scss": "^7.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.2",
+    "jquery": "^3.3.1",
+    "jquery.nicescroll": "^3.7.6"
+  }
+}
