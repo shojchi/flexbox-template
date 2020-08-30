@@ -1,0 +1,45 @@
+.header-menu {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    flex-direction: column;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include sm-min {
+            display: flex;
+        }
+        @include sm {
+            display: none;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &-item {
+            & a {
+                display: block;
+                margin: 5px;
+                padding: 10px 15px;
+                border-radius: 4px;
+    
+                &:hover,
+                &:focus {
+                    color: $color-accent;
+                    background: rgba(0, 0, 0, 0.3);
+                    @include text-shadow;
+                } 
+            }
+
+            &.active a {
+               color: $color-accent-dark;
+               background: rgba(0, 0, 0, 0.4);
+               @include text-shadow;
+            }
+        }
+         
+    }
+}

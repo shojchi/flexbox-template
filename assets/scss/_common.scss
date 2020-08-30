@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    background-color: $color-warning;
+    background-image: url(../img/global-bg.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+
+    @include lg {
+        padding: 0 15px;
+    }
+    @include lg-min {
+        padding: 0 30px;
+    }
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: $color-light;
+}
