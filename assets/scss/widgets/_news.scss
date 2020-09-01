@@ -1,0 +1,40 @@
+.widget-news {
+
+    @include lg-min {
+        width: 240px;
+    }
+    
+    &__item {
+        &-title {
+            @include text-shortener;
+            
+            margin: 0 0 10px;
+            transition: color 0.5s;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        &-wrapper {
+            display: flex;
+            margin: 0 -15px 7.5px;
+            padding: 0 15px 7.5px;
+            flex-wrap: wrap;
+        }
+
+        &-image {
+            overflow: hidden;
+            width: 75px;
+            height: 75px;
+            border-radius: 4px;
+        }
+        
+        &-excerpt {
+            @include block-with-text;
+
+            width: calc(100% - 75px);
+            padding-left: 10px;
+            transition: color 0.5s;
+            color: $color-gray;
+        }
+    }
+}

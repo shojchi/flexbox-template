@@ -32,3 +32,22 @@ a {
     text-decoration: none;
     color: $color-light;
 }
+
+.container {
+    display: flex;
+
+    @include lg {
+        flex-wrap: wrap;
+    }
+}
+
+p {
+    color: $color-gray;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}

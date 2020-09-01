@@ -1,0 +1,18 @@
+.left {
+    
+    @include md-min {
+        flex: 0 0 220px;
+        margin-bottom: 15px;
+        order: 1;
+    }
+    @include md-xs {
+        width: 50%;
+        padding-right: 7.5px;
+        order: 2;
+    }
+    @include xs {
+        width: 100%;
+        margin-bottom: 0;
+        order: 2;
+    }
+}
