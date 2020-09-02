@@ -1,0 +1,65 @@
+&-item {
+    padding: 7.5px;
+    
+    &:hover {
+        & h3 {
+            color: $color-accent;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        & .main-content-item__excerpt {
+            top: 30px;
+            color: #eeeeee;
+            background: rgba(0, 0, 0, 0.75);
+        }
+    }
+
+    @include sm-min {
+        flex: 0 0 33.333%;
+    }
+    @include sm-xx {
+        flex: 0 0 50%;
+    }
+    @include xx {
+        flex: 0 0 100%;
+    }
+
+    &__wrapper {
+        position: relative;
+        overflow: hidden;
+        border: 5px solid rgba(0, 0, 0, 0.5);
+        border-radius: 7px;
+    }
+
+    &__title {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 30px;
+        margin: 0;
+        padding: 7px;
+        transition: background-color 0.5s;
+        text-align: center;
+        letter-spacing: 1px;
+        @include text-shortener;
+        color: $color-light;
+        background-color: rgba(0, 0, 0, 0.5);
+        @include text-shadow;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1em;
+    }
+
+    &__excerpt {
+        position: absolute;
+        top: 210%;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 27px);
+        margin: 0;
+        padding: 15px;
+        transition: top 0.5s ease-out, background-color 0.5s ease-out;
+        text-align: center;
+    }       
+}
