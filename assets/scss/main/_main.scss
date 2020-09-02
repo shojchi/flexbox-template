@@ -14,29 +14,4 @@
     @include md {
         order: 1;
     }
-    
-    &-breadcrumb {
-        width: 100%;
-        margin-bottom: 30px;
-        padding: 8px 12px;
-        text-align: right;
-        letter-spacing: 2px;
-        border-radius: 7px;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    
-        & span {
-            position: relative;
-            margin-right: 7px;
-            color: $color-gray;
-        }
-
-        & a {
-            font-weight: bold;
-        }
-
-        & i {
-            color: $color-gray;
-            font-weight: bold;
-        }
-    }
 }

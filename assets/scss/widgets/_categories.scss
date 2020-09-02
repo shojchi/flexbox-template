@@ -12,6 +12,13 @@
             padding: 5px 0;
             transition: padding-left 0.5s;
             border-radius: 4px;
+
+            &:hover {
+                padding-left: 10px;
+                color: $color-accent;
+                background: rgba(0, 0, 0, 0.5);
+                @include text-shadow;
+            }
         }
     }
 }

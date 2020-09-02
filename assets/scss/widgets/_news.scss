@@ -5,6 +5,22 @@
     }
     
     &__item {
+        & a {
+            &:hover {
+                & .widget-news__item-wrapper {
+                    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+                }
+
+                & h4 {
+                    @include text-shadow;
+                }
+                
+                & .widget-news__item-excerpt {
+                    color: $color-light;
+                }
+            }
+        }
+
         &-title {
             @include text-shortener;
             
