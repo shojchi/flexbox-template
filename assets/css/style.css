@@ -713,6 +713,69 @@ p {
       flex-wrap: wrap;
 }
 
+.main-content-item {
+  padding: 7.5px;
+}
+
+.main-content-item:hover h3 {
+  color: #e12727;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.main-content-item:hover .main-content-item__excerpt {
+  top: 30px;
+  color: #eeeeee;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.main-content-item__wrapper {
+  position: relative;
+  overflow: hidden;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+}
+
+.main-content-item__title {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 30px;
+  margin: 0;
+  padding: 7px;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  text-align: center;
+  letter-spacing: 1px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1em;
+}
+
+.main-content-item__excerpt {
+  position: absolute;
+  top: 210%;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 27px);
+  margin: 0;
+  padding: 15px;
+  -webkit-transition: top 0.5s ease-out, background-color 0.5s ease-out;
+  -o-transition: top 0.5s ease-out, background-color 0.5s ease-out;
+  transition: top 0.5s ease-out, background-color 0.5s ease-out;
+  text-align: center;
+}
+
 .right {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
@@ -937,6 +1000,11 @@ p {
   .main-content__title {
     font-size: 2rem;
   }
+  .main-content-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1065,6 +1133,11 @@ p {
     max-width: 300px;
     margin-bottom: 15px;
   }
+  .main-content-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
 }
 
 @media (max-width: 767.8px) and (min-width: 576px) {
@@ -1104,5 +1177,10 @@ p {
   .header-logo__image {
     width: 80%;
     margin-bottom: 15px;
+  }
+  .main-content-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
